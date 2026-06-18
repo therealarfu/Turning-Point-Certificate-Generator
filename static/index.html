@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado Turning Point</title>
+    <link rel="icon" type="image/ico" href="/static/img/icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="mobile-header">
+        <span class="mobile-header-title">TURNING POINT</span>
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+    </div>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="/static/img/turning-point.png" alt="Turning Point">
+            </div>
+            <nav>
+                <div class="nav-item active">
+                    <i class="ti ti-certificate" aria-hidden="true"></i>
+                    Gerar Certificado
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <img src="/static/img/world.png" alt="Ícone Turning Point">
+                <p>Transformando estudantes em líderes para um futuro melhor.</p>
+            </div>
+        </aside>
+
+        <div class="main">
+
+            <header class="topbar">
+                <h1>Bem-vindo ao <span>Turning Point</span></h1>
+                <p>Plataforma de geração de certificados para líderes voluntários.</p>
+            </header>
+
+            <main class="content">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="cert-illustration">
+                            <i class="ti ti-certificate" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-side">
+                            <h2 class="card-title">Gerar Certificado</h2>
+                            <div class="card-underline"></div>
+                            <p class="card-desc">Preencha os dados abaixo para gerar um certificado de participação.</p>
+
+                            <label class="field-label" for="name">Nome do Voluntário</label>
+                            <div class="input-wrap">
+                                <i class="ti ti-user" aria-hidden="true"></i>
+                                <input type="text" id="name" name="name" autocomplete="off" placeholder="Insira o nome completo">
+                            </div>
+
+                            <label class="field-label" for="date">Data de Emissão</label>
+                            <div class="input-wrap">
+                                <i class="ti ti-calendar" aria-hidden="true"></i>
+                                <input type="date" id="date" name="date">
+                            </div>
+
+                            <button class="btn-gerar" onclick="generateCertificate()">
+                                <i class="ti ti-certificate" aria-hidden="true"></i>
+                                Gerar Certificado
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card key-card">
+                    <div class="key-inner">
+                        <div class="quote-circle">❝</div>
+                        <div>
+                            <div class="key-tag">KEY MESSAGE</div>
+                            <p id="keyText" class="key-text">Construímos sistemas, não soluções temporárias. O Turning Point cria estruturas replicáveis, capazes de crescer e se manter, não ações pontuais que desaparecem com o tempo.</p>
+                        </div>
+                    </div>
+                        <div class="dots">
+                        <div class="dot active" onclick="changeMessage(0)"></div>
+                        <div class="dot" onclick="changeMessage(1)"></div>
+                        <div class="dot" onclick="changeMessage(2)"></div>
+                        <div class="dot" onclick="changeMessage(3)"></div>
+                        <div class="dot" onclick="changeMessage(4)"></div>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer class="footer-bar">
+                © 2026 Turning Point. Todos os direitos reservados.
+            </footer>
+
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="bottom-nav-item active">
+            <i class="ti ti-certificate" aria-hidden="true"></i>
+            Gerar
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
