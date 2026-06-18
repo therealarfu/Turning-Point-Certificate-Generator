@@ -1,3 +1,5 @@
+<img width="3943" height="990" alt="image" src="https://github.com/user-attachments/assets/421e2f1a-f3c7-4b13-9d80-868616fb5ac6" />
+
 # Turning Point Certificate Generator
 
 A web application for generating personalized certificates from a PDF template.
